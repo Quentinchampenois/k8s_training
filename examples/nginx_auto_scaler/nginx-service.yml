@@ -6,5 +6,7 @@ spec:
   selector:
     app: nginx
   ports:
-    - name: http
-      port: 80
+  - name: http
+    port: 80
+  - name: https
+    port: 443

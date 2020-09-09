@@ -3,11 +3,11 @@ kind: Ingress
 metadata:
   name: web
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: letsencrypt-staging
 spec:
   tls:
     - hosts:
-        - nginx.quentin.k8s.osp.dev
+      - nginx.quentin.k8s.osp.dev
       secretName: nginx
   rules:
     - host: nginx.quentin.k8s.osp.dev
